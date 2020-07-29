@@ -1,0 +1,21 @@
+---
+service:
+  # the name of your service
+  name: test
+
+  # what does this service do? description is used also for full-text search
+  description: |
+    ruby microservice that is reponsible for storing credit card info
+
+  # tags are key value pairs to help filter / group services. use tags to
+  # represent your engineering organization's way of categorizing services
+  tags:
+    - key: tier
+      value: 0
+    - key: lang
+      value: "ruby"
+    - key: group
+      value: "payments"
+    - key: pci
+      value: "true"
+      
