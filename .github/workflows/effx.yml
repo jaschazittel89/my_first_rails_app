@@ -1,0 +1,17 @@
+name: effx sync
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Sync effx configuration with effx account
+        uses: effxhq/effx-sync-action@master
+        with:
+          directory: /github/workspace
+        env:
+          EFFX_API_KEY: ${{ 0ec2faf4-3583-4d41-9857-8d0e8d1e5785 }}
